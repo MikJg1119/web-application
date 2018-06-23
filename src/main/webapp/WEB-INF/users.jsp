@@ -28,8 +28,10 @@
                     <td>${user.firstName}</td>
                     <td>${user.lastName}</td>
                     <td>${user.email}</td>
-                    <td><a href="/users/edit?id=${user.id}" class="btn btn-primary">Edytuj</a></td>
+                    <td><a href="/users/edit?id=${user.id}" class="btn btn-primary">Edytuj</a>
+                    <td><a href="/users/delete?id=${user.id}" method>
 
+                    </td>
                 </tr>
                 </c:forEach>
             

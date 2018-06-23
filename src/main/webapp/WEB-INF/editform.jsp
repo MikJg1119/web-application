@@ -10,7 +10,9 @@
 
 <div class="container">
 
-    <form action="/users/create" method="POST" class="form-horizontal">
+    <form action="/users/edit" method="POST" class="form-horizontal">
+
+        <input type = "hidden" name ="id" value = "${user.id}">
 
         <div class="form-group">
 
@@ -60,7 +62,7 @@
 
             <div class="col-sm-offset-2 col-sm-10">
 
-                <button type="update" class="btn btn-success">Zapisz</button>
+                <button type="submit" class="btn btn-success">Zapisz</button>
 
                 <a href="/users" class="btn btn-danger">Anuluj</a>
 
