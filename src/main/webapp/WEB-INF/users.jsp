@@ -1,3 +1,4 @@
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,24 +14,23 @@
             <table class="table table-bordered table-striped table-hover">
                 <thead>
                 <tr>
-                    <th>Lp</th>
-                    <th>Nazwa</th>
-                    <th>Cena</th>
+                    <th>ID</th>
+                    <th>Imie</th>
+                    <th>Nazwisko</th>
+                    <th>Email</th>
                 </tr>
                 </thead>
                 <tbody>
+                <c:forEach var="user" items ="${usersList}">    
                 <tr>
-                    <td>1</td>
-                    <td>Nauka Programowania</td>
-                    <td>1500</td>
+                    <td>${user.id}</td>
+                    <td>${user.firstName}</td>
+                    <td>${user.lastName}</td>
+                    <td>${user.email}</td>
 
                 </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Kurs Python</td>
-                    <td>2500</td>
-
-                </tr>
+                </c:forEach>
+            
                 </tbody>
             </table>
         </div>
