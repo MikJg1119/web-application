@@ -36,6 +36,11 @@
         </div>
     </div>
     <div class="row">
+                  <div class="col-md-offset-3">
+                      <a class="btn btn-primary" href="/users/create">Dodaj Użytkownika</a>
+                  </div>
+              </div>
+    <div class="row">
         <div class="col-md-offset-3">
             <a class="btn btn-primary" href="menu.html">Powrót do menu</a>
         </div>
