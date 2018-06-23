@@ -15,7 +15,7 @@ public class UserServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        RequestDispatcher rd = req.getRequestDispatcher("WEB-INF/tabela.jsp");
+        RequestDispatcher rd = req.getRequestDispatcher("WEB-INF/users.jsp");
 
         rd.forward(req,resp);
     }
